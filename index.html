@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,64 +11,91 @@
 <style>
 
 body{
-font-family: Arial, sans-serif;
 margin:0;
-background:#f4f6f8;
-line-height:1.6;
+font-family: 'Segoe UI', Arial, sans-serif;
+background:#f5f7fa;
+color:#333;
 }
 
 header{
-background:#0a3d62;
+background:#0b3d91;
 color:white;
-padding:20px;
-text-align:center;
+padding:20px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
-nav{
-background:#145a86;
-padding:15px;
-text-align:center;
+header h1{
+margin:0;
+font-size:22px;
 }
 
 nav a{
 color:white;
-margin:15px;
+margin-left:20px;
 text-decoration:none;
 font-weight:bold;
 }
 
 .hero{
-background:white;
-padding:60px;
+background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+url('https://images.unsplash.com/photo-1584515933487-779824d29309');
+background-size:cover;
+color:white;
+padding:120px 20px;
 text-align:center;
 }
 
-.section{
-padding:50px;
-background:white;
-margin:20px;
-border-radius:8px;
+.hero h2{
+font-size:40px;
 }
 
-.section h2{
-color:#0a3d62;
+.hero p{
+font-size:18px;
+max-width:700px;
+margin:auto;
 }
 
-.staff{
+.btn{
+background:#27ae60;
+color:white;
+padding:15px 25px;
+border:none;
+margin-top:20px;
+cursor:pointer;
+font-size:16px;
+border-radius:5px;
+}
+
+.container{
+padding:60px 40px;
+max-width:1100px;
+margin:auto;
+}
+
+.section-title{
+text-align:center;
+color:#0b3d91;
+margin-bottom:40px;
+}
+
+.cards{
 display:flex;
-gap:20px;
 flex-wrap:wrap;
+gap:20px;
+justify-content:center;
 }
 
-.staff-card{
-background:#f9f9f9;
+.card{
+background:white;
 padding:20px;
 border-radius:8px;
-width:250px;
-text-align:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+width:300px;
 }
 
-.staff-card img{
+.staff img{
 width:100%;
 border-radius:8px;
 }
@@ -74,7 +103,8 @@ border-radius:8px;
 .gallery{
 display:flex;
 flex-wrap:wrap;
-gap:10px;
+gap:15px;
+justify-content:center;
 }
 
 .gallery img{
@@ -82,29 +112,19 @@ width:300px;
 border-radius:8px;
 }
 
-.testimony{
-background:#ecf0f1;
+.testimonial{
+background:white;
 padding:20px;
-margin:10px 0;
-border-radius:8px;
-}
-
-button{
-background:#27ae60;
-color:white;
-padding:15px;
-border:none;
-font-size:16px;
-cursor:pointer;
-border-radius:5px;
+margin-bottom:15px;
+border-left:5px solid #27ae60;
 }
 
 footer{
-background:#0a3d62;
+background:#0b3d91;
 color:white;
 text-align:center;
 padding:20px;
-margin-top:20px;
+margin-top:40px;
 }
 
 </style>
@@ -117,235 +137,227 @@ margin-top:20px;
 
 <h1>HealthPsyche and CareBridge Initiatives</h1>
 
-<p>Promoting Health, Empowering Communities, Transforming Lives</p>
-
-</header>
-
 <nav>
 
 <a href="#mission">Mission</a>
 
-<a href="#objectives">Objectives</a>
+<a href="#programs">Programs</a>
 
-<a href="#staff">Our Staff</a>
+<a href="#staff">Team</a>
 
 <a href="#gallery">Gallery</a>
 
-<a href="#testimonies">Testimonies</a>
+<a href="#testimonials">Testimonials</a>
 
 <a href="#contact">Contact</a>
 
-<a href="#donate">Donate</a>
-
 </nav>
 
-<div class="hero">
+</header>
 
-<h2>Welcome to HealthPsyche and CareBridge Initiatives</h2>
+
+<section class="hero">
+
+<h2>Building Healthier Communities</h2>
 
 <p>
 
-We promote health and well-being through awareness campaigns, counseling, empowerment programs, and community interventions targeting vulnerable and underserved populations.
+Promoting health, empowering vulnerable populations, and advancing psychosocial well-being through evidence-based programs.
 
 </p>
 
-<button>Partner With Us</button>
+<button class="btn">Partner With Us</button>
 
-</div>
+</section>
 
 
-<div class="section" id="mission">
+<section class="container" id="mission">
 
-<h2>Our Mission</h2>
+<h2 class="section-title">Our Mission & Vision</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Mission</h3>
 
 <p>
 
-<!-- EDIT THIS -->
-
-Write your mission statement here.
+Write your mission here.
 
 Example:
 
-To improve health outcomes and psychosocial well-being of vulnerable populations through education, empowerment, advocacy, and access to essential services.
+To promote health and psychosocial well-being through education, empowerment, and access to care.
 
 </p>
 
-<h2>Core Values</h2>
+</div>
+
+<div class="card">
+
+<h3>Vision</h3>
+
+<p>
+
+A world where vulnerable communities achieve optimal health and well-being.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Core Values</h3>
 
 <ul>
-
-<li>Compassion</li>
 
 <li>Integrity</li>
 
+<li>Compassion</li>
+
 <li>Equity</li>
 
-<li>Community Empowerment</li>
+<li>Excellence</li>
 
-<li>Transparency</li>
-
-<li>Professional Excellence</li>
+<li>Innovation</li>
 
 </ul>
 
 </div>
 
+</div>
 
-<div class="section" id="objectives">
+</section>
 
-<h2>Aims and Objectives</h2>
 
-<ul>
+<section class="container" id="programs">
 
-<li>Promote health and well-being through awareness campaigns and counseling.</li>
+<h2 class="section-title">Our Programs</h2>
 
-<li>Advocate for access to healthcare, education, and food.</li>
+<div class="cards">
 
-<li>Support vulnerable populations including children, widows, and elderly.</li>
+<div class="card">
 
-<li>Provide economic empowerment and skills acquisition.</li>
+<h3>Health Awareness</h3>
 
-<li>Conduct community outreach on disease prevention and hygiene.</li>
-
-<li>Promote health psychology and healthy lifestyles.</li>
-
-<li>Collaborate with partners and stakeholders.</li>
-
-<li>Mobilize resources for humanitarian initiatives.</li>
-
-</ul>
+<p>Community outreach, disease prevention, and education.</p>
 
 </div>
 
+<div class="card">
 
-<div class="section" id="staff">
+<h3>Psychosocial Support</h3>
 
-<h2>Our Team</h2>
-
-<div class="staff">
-
-<div class="staff-card">
-
-<img src="https://via.placeholder.com/250">
-
-<h3>Executive Director</h3>
-
-<p>Add Name Here</p>
+<p>Counseling and mental health programs.</p>
 
 </div>
 
-<div class="staff-card">
+<div class="card">
 
-<img src="https://via.placeholder.com/250">
+<h3>Community Empowerment</h3>
 
-<h3>Program Manager</h3>
-
-<p>Add Name Here</p>
-
-</div>
-
-<div class="staff-card">
-
-<img src="https://via.placeholder.com/250">
-
-<h3>Health Officer</h3>
-
-<p>Add Name Here</p>
+<p>Skills training and economic empowerment initiatives.</p>
 
 </div>
 
 </div>
 
+</section>
+
+
+<section class="container staff" id="staff">
+
+<h2 class="section-title">Our Team</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="images/director.jpg">
+
+<h3>Add Name</h3>
+
+<p>Executive Director</p>
+
 </div>
 
+<div class="card">
 
-<div class="section" id="gallery">
+<img src="images/staff1.jpg">
 
-<h2>Our Activities Gallery</h2>
+<h3>Add Name</h3>
+
+<p>Program Manager</p>
+
+</div>
+
+<div class="card">
+
+<img src="images/staff2.jpg">
+
+<h3>Add Name</h3>
+
+<p>Health Officer</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="container" id="gallery">
+
+<h2 class="section-title">Gallery</h2>
 
 <div class="gallery">
 
-<img src="https://via.placeholder.com/300">
+<img src="images/outreach1.jpg">
 
-<img src="https://via.placeholder.com/300">
+<img src="images/outreach2.jpg">
 
-<img src="https://via.placeholder.com/300">
-
-<img src="https://via.placeholder.com/300">
+<img src="images/outreach3.jpg">
 
 </div>
 
-<p>You can replace these images with your real outreach photos.</p>
+</section>
+
+
+<section class="container" id="testimonials">
+
+<h2 class="section-title">Testimonials</h2>
+
+<div class="testimonial">
+
+"This program improved our community health knowledge."
 
 </div>
 
+<div class="testimonial">
 
-<div class="section" id="testimonies">
-
-<h2>Testimonies</h2>
-
-<div class="testimony">
-
-<p>
-
-"This training transformed our community. We now understand hygiene and disease prevention."
-
-</p>
-
-<strong>- Community Member</strong>
+"The empowerment training changed my life."
 
 </div>
 
-<div class="testimony">
-
-<p>
-
-"The empowerment program helped me start my own business."
-
-</p>
-
-<strong>- Program Beneficiary</strong>
-
-</div>
-
-</div>
+</section>
 
 
-<div class="section" id="contact">
+<section class="container" id="contact">
 
-<h2>Contact Us</h2>
+<h2 class="section-title">Contact Us</h2>
 
 <p>Email: info@hpcbi.name.ng</p>
 
-<p>Phone: Add Phone Number</p>
-
 <p>Location: Lagos, Nigeria</p>
 
-</div>
+<button class="btn">Donate Now</button>
 
-
-<div class="section" id="donate">
-
-<h2>Support Our Work</h2>
-
-<p>
-
-Your donation helps us reach more vulnerable communities.
-
-</p>
-
-<button>Donate Now</button>
-
-</div>
+</section>
 
 
 <footer>
 
-<p>
-
 © 2026 HealthPsyche and CareBridge Initiatives
-
-</p>
 
 </footer>
 
